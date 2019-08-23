@@ -17,7 +17,7 @@ function CuboidMaker(properties) {
   
   Formula for cuboid volume: length * width * height
 */
-// GameObject.prototype.destroy = function() { return `${this.name} was removed from the game.` }
+CuboidMaker.prototype.volume = function() { return (this.length * this.width * this.height) }
 
 
 
