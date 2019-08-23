@@ -5,6 +5,11 @@
 /* == Step 1: Base Constructor ==
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
+function CuboidMaker(properties) {
+    for (let key of['length', 'width', 'height']) {
+        this[key] = properties[key]
+    }
+}
 
 
 /* == Step 2: Volume Method ==
@@ -12,6 +17,8 @@
   
   Formula for cuboid volume: length * width * height
 */
+// GameObject.prototype.destroy = function() { return `${this.name} was removed from the game.` }
+
 
 
 /* == Step 3: Surface Area Method ==
@@ -29,5 +36,3 @@
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 // console.log(cuboid.volume()); // 100
 // console.log(cuboid.surfaceArea()); // 130
-
-
