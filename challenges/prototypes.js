@@ -26,12 +26,29 @@ CuboidMaker.prototype.volume = function() { return (this.length * this.width * t
 
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
+CuboidMaker.prototype.surfaceArea = function() { return (this.length * this.width + this.length * this.height + this.width * this.height) }
+
 
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
   Create a cuboid object that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
 */
+// onst mage = new Humanoid({
+//   createdAt: new Date(),
+//   dimensions: {
+//       length: 2,
+//       width: 1,
+//       height: 1,
+//   },
+//   healthPoints: 5,
+//   name: 'Bruce',
+//   team: 'Mage Guild',
+//   weapons: [
+//       'Staff of Shamalama',
+//   ],
+//   language: 'Common Tongue',
+// });
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 // console.log(cuboid.volume()); // 100
